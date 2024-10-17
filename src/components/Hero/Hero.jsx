@@ -3,7 +3,7 @@ import { XMarkIcon } from "@heroicons/react/20/solid";
 import BannerPod1 from "../../assets/banner.png";
 import BannerPod2 from "../../assets/banner2.png";
 import BannerPod3 from "../../assets/banner3.png";
-import MainBanner from '../../assets/MainBanner.jpg'
+import MainBanner from "../../assets/MainBanner.png";
 
 const Hero = () => {
   const products = [
@@ -38,7 +38,6 @@ const Hero = () => {
   ];
   return (
     <>
-    
       <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
         <div
           aria-hidden="true"
@@ -64,7 +63,7 @@ const Hero = () => {
             className="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
           />
         </div>
-        
+
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
           <p className="text-sm leading-6 text-gray-900">
             <strong className="font-semibold">
@@ -98,96 +97,100 @@ const Hero = () => {
           </button>
         </div>
       </div>
-   
 
-<div>
-  <div className="sm:hidden">
-    <label htmlFor="Tab" className="sr-only">Tab</label>
+      <div>
+        <div className="sm:hidden">
+          <label htmlFor="Tab" className="sr-only">
+            Tab
+          </label>
 
-    <select id="Tab" className="w-full rounded-md border-gray-200">
-      <option>Settings</option>
-      <option>Messages</option>
-      <option>Archive</option>
-      <option select>Notifications</option>
-    </select>
-  </div>
+          <select id="Tab" className="w-full rounded-md border-gray-200">
+            <option>Settings</option>
+            <option>Messages</option>
+            <option>Archive</option>
+            <option select>Notifications</option>
+          </select>
+        </div>
 
-  <div className="hidden sm:block">
-    <div className="border-b border-gray-200">
-      <nav className="-mb-px flex gap-6 justify-center mt-4" aria-label="Tabs">
-        <a
-          href="#"
-          className="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-        >
-          VAPES
-        </a>
+        <div className="hidden sm:block">
+          <div className="border-b border-gray-200">
+            <nav
+              className="-mb-px flex gap-6 justify-center mt-4"
+              aria-label="Tabs"
+            >
+              <a
+                href="#"
+                className="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+              >
+                VAPES
+              </a>
 
-        <a
-          href="#"
-          className="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-        >
-          PODS
-        </a>
+              <a
+                href="#"
+                className="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+              >
+                PODS
+              </a>
 
-        <a
-          href="#"
-          className="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-        >
-          NICSALTS
-        </a>
+              <a
+                href="#"
+                className="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+              >
+                NICSALTS
+              </a>
 
-        <a
-          href="#"
-          className="shrink-0 border-b-2 border-red-500 px-1 pb-4 text-sm font-medium text-red-600"
-          aria-current="page"
-        >
-          FREEBASE
-        </a>
-      </nav>
-    </div>
-  </div>
-</div>
-{/* MAIN BANNER */}
-{/*
+              <a
+                href="#"
+                className="shrink-0 border-b-2 border-red-500 px-1 pb-4 text-sm font-medium text-red-600"
+                aria-current="page"
+              >
+                FREEBASE
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      {/* MAIN BANNER */}
+      {/*
   Heads up! 👋
 
   This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
 */}
 
-<section
-  className="overflow-hidden bg-cover bg-top bg-no-repeat"
-  style={{ backgroundImage: `url(${MainBanner})` }}
->
-  <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-    <div className="text-center ltr:sm:text-left rtl:sm:text-right">
-      <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">Latest Shirts</h2>
+      <section
+        className="overflow-hidden bg-cover bg-top bg-no-repeat"
+        style={{ backgroundImage: `url(${MainBanner})` }}
+      >
+        <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+          <div className="text-center ltr:sm:text-left rtl:sm:text-right">
+            <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
+              Latest Shirts
+            </h2>
 
-      <p className="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore officia corporis quasi
-        doloribus iure architecto quae voluptatum beatae excepturi dolores.
-      </p>
+            <p className="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Inventore officia corporis quasi doloribus iure architecto quae
+              voluptatum beatae excepturi dolores.
+            </p>
 
-      <div className="mt-4 sm:mt-8">
-        <a
-          href="#"
-          className="inline-block rounded-full bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
-        >
-          Get Yours Today
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
+            <div className="mt-4 sm:mt-8">
+              <a
+                href="#"
+                className="inline-block rounded-full bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              >
+                Get Yours Today
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div>
         <span className="flex items-center mt-2">
           <span className="h-px flex-1 bg-[#111111]"></span>
           <span className="shrink-0 px-6 text-center text-3xl sm:text-3xl bg-gradient-to-r from-gray-600 via-gray-700 to-gray-900 text-transparent bg-clip-text">
-  Destaques
-</span>
+            Destaques
+          </span>
           <span className="h-px flex-1 bg-[#000000]"></span>
         </span>
         <div className="flex  mx-auto justify-center my-10">
@@ -232,10 +235,20 @@ const Hero = () => {
                 <span className="absolute inset-0 border border-current"></span>
                 <span className=" gap-2 items-center border border-current bg-white px-7 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 flex">
                   Explorar
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-</svg>
-
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      strokeLinejoin="round"
+                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
                 </span>
               </a>
             </div>
