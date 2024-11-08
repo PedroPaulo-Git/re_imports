@@ -20,129 +20,125 @@ import ELFWORLDEX from "../../assets/ELFWORLDEX.png";
 import BLVKEX from "../../assets/BLVKEX.png";
 import Blacksheep from "../../assets/Blacksheep.jpg";
 import MainBanner from "../../assets/MainBanner.jpg";
+const produtosDestaque = [
+  {
+    id: 1,
+    name: "Ignite 150V",
+    href: "#",
+    imageSrc: ignite150v,
+    imageAlt: "Pod Ignite 150V",
+    price: "R$50",
+    puffs: "1500 Puffs",
+  },
+  {
+    id: 2,
+    name: "Lost",
+    href: "#",
+    imageSrc: lost,
+    imageAlt: "Pod Lost",
+    price: "R$50",
+    puffs: "2000 Puffs",
+  },
+  {
+    id: 3,
+    name: "Oxbar",
+    href: "#",
+    imageSrc: oxbarold,
+    imageAlt: "Pod Oxbar",
+    price: "R$50",
+    puffs: "2500 Puffs",
+  },
+  {
+    id: 4,
+    name: "Waka",
+    href: "#",
+    imageSrc: waka,
+    imageAlt: "Pod Waka",
+    price: "R$50",
+    puffs: "1800 Puffs",
+  },
+];
 
-  const produtosDestaque = [
-    {
-      id: 1,
-      name: "Basic Tee",
-      href: "#",
-      imageSrc: ignite150v,
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: "$35",
-      color: "Black",
-    },
-    {
-      id: 2,
-      name: "Basic Tee",
-      href: "#",
-      imageSrc: lost,
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: "$35",
-      color: "Black",
-    },
-    {
-      id: 3,
-      name: "Basic Tee",
-      href: "#",
-      imageSrc: oxbarold,
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: "$35",
-      color: "Black",
-    },
-    {
-        id: 4,
-        name: "Basic Tee",
-        href: "#",
-        imageSrc: waka,
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: "$35",
-        color: "Black",
-      },
-
-    // More products...
-  ];
-  
-  const produtos = [
-    {
-      id: 1,
-      name: "Basic Tee",
-      href: "#",
-      imageSrc: igniteEX,
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: "$35",
-      color: "Black",
-    },
-    {
-      id: 2,
-      name: "Basic Tee",
-      href: "#",
-      imageSrc: WAKA2EX,
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: "$35",
-      color: "Black",
-    },
-    {
-      id: 3,
-      name: "Basic Tee",
-      href: "#",
-      imageSrc: ELF6EX,
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: "$35",
-      color: "Black",
-    },
-    {
-        id: 4,
-        name: "Basic Tee",
-        href: "#",
-        imageSrc: Blacksheep,
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: "$35",
-        color: "Black",
-      },
-      {
-        id: 5,
-        name: "Basic Tee",
-        href: "#",
-        imageSrc: OXBAR8EX,
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: "$35",
-        color: "Black",
-      },
-      {
-        id: 6,
-        name: "Basic Tee",
-        href: "#",
-        imageSrc: lostmaryEX,
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: "$35",
-        color: "Black",
-      },
-      {
-        id: 7,
-        name: "Basic Tee",
-        href: "#",
-        imageSrc: BLVKEX,
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: "$35",
-        color: "Black",
-      },
-      {
-        id: 8,
-        name: "Basic Tee",
-        href: "#",
-        imageSrc: ELFWORLDEX,
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: "$35",
-        color: "Black",
-      },
-
-  ];
+const produtos = [
+  {
+    id: 1,
+    name: "Ignite EX",
+    href: "#",
+    imageSrc: igniteEX,
+    imageAlt: "Pod Ignite EX",
+    price: "R$50",
+    puffs: "3000 Puffs",
+  },
+  {
+    id: 2,
+    name: "Waka 2",
+    href: "#",
+    imageSrc: WAKA2EX,
+    imageAlt: "Pod Waka 2",
+    price: "R$50",
+    puffs: "2000 Puffs",
+  },
+  {
+    id: 3,
+    name: "ELF 6 EX",
+    href: "#",
+    imageSrc: ELF6EX,
+    imageAlt: "Pod ELF 6 EX",
+    price: "R$50",
+    puffs: "600 Puffs",
+  },
+  {
+    id: 4,
+    name: "Black Sheep",
+    href: "#",
+    imageSrc: Blacksheep,
+    imageAlt: "Pod Black Sheep",
+    price: "R$50",
+    puffs: "1200 Puffs",
+  },
+  {
+    id: 5,
+    name: "OXBAR 8 EX",
+    href: "#",
+    imageSrc: OXBAR8EX,
+    imageAlt: "Pod OXBAR 8 EX",
+    price: "R$50",
+    puffs: "800 Puffs",
+  },
+  {
+    id: 6,
+    name: "Lost Mary EX",
+    href: "#",
+    imageSrc: lostmaryEX,
+    imageAlt: "Pod Lost Mary EX",
+    price: "R$50",
+    puffs: "1500 Puffs",
+  },
+  {
+    id: 7,
+    name: "BLVK EX",
+    href: "#",
+    imageSrc: BLVKEX,
+    imageAlt: "Pod BLVK EX",
+    price: "R$50",
+    puffs: "2000 Puffs",
+  },
+  {
+    id: 8,
+    name: "ELF World EX",
+    href: "#",
+    imageSrc: ELFWORLDEX,
+    imageAlt: "Pod ELF World EX",
+    price: "R$50",
+    puffs: "2500 Puffs",
+  },
+];
   
 function Shop() {
     return (
         <>
-      <div className="bg-white mx-auto px-2">
-        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <div id="shop" className="bg-white mx-auto px-2">
+        <div className="mx-auto max-w-2xl px-4 py-16 lg:pt-8 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <span className="flex items-center mt-2">
           <span className="h-px flex-1 bg-[#111111]"></span>
           <span className="shrink-0 px-6 text-center text-3xl sm:text-3xl bg-gradient-to-r from-gray-600 via-gray-700 to-gray-900 text-transparent bg-clip-text">
@@ -151,7 +147,7 @@ function Shop() {
           <span className="h-px flex-1 bg-[#000000]"></span>
         </span>
           <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            {produtosDestaque.map((product) => (
+          {produtosDestaque.map((product) => (
               <div key={product.id} className="group relative">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                   <img
@@ -168,7 +164,7 @@ function Shop() {
                         {product.name}
                       </a>
                     </h3>
-                    <p className="mt-1 text-sm text-gray-500">{product.color}</p>
+                    <p className="mt-1 text-sm text-gray-500">{product.puffs}</p>
                   </div>
                   <p className="text-sm font-medium text-gray-900">{product.price}</p>
                 </div>
@@ -215,9 +211,9 @@ function Shop() {
         </span>
   
           <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            {produtos.map((product) => (
+          {produtos.map((product) => (
               <div key={product.id} className="group relative">
-                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white shadow-xl g:aspect-none group-hover:opacity-75 lg:h-80">
+                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white shadow-xl group-hover:opacity-75 lg:h-80">
                   <img
                     alt={product.imageAlt}
                     src={product.imageSrc}
@@ -232,7 +228,7 @@ function Shop() {
                         {product.name}
                       </a>
                     </h3>
-                    <p className="mt-1 text-sm text-gray-500">{product.color}</p>
+                    <p className="mt-1 text-sm text-gray-500">{product.puffs}</p>
                   </div>
                   <p className="text-sm font-medium text-gray-900">{product.price}</p>
                 </div>

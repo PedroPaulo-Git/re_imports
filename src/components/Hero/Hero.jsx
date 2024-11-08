@@ -65,7 +65,7 @@ const Hero = () => {
           />
         </div>
 
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <div className="flex flex-wrap mx-auto items-center gap-x-4 gap-y-2">
           <p className="text-sm leading-6 text-gray-900">
             <strong className="font-semibold">
               Coleção Premium de Vapes e Pods
@@ -81,22 +81,22 @@ const Hero = () => {
             qualidade. Perfeito para uma experiência suave e satisfatória.
           </p>
           <a
-            href="#"
+           href="https://api.whatsapp.com/send?phone=8199049803&text=Olá,%20gostaria%20de%20entrar%20em%20contato."
             className="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
           >
             Comprar Agora <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
 
-        {/* <div className="flex flex-1 justify-end">
+        <div className="flex flex-1 justify-end">
           <button
             type="button"
             className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
           >
-            <span className="sr-only">Dismiss</span>
-            <XMarkIcon aria-hidden="true" className="h-5 w-5 text-gray-900" />
+            {/* <span className="sr-only">Dismiss</span>
+            <XMarkIcon aria-hidden="true" className="h-5 w-5 text-gray-900" /> */}
           </button>
-        </div> */}
+        </div>
       </div>
 
       <div>
@@ -113,7 +113,7 @@ const Hero = () => {
           </select>
         </div> */}
 
-        <div className="hidden sm:block">
+        {/* <div className="hidden sm:block">
           <div className="border-b border-gray-200">
             <nav
               className="-mb-px flex gap-6 justify-center mt-4"
@@ -149,7 +149,7 @@ const Hero = () => {
               </a>
             </nav>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* MAIN BANNER */}
       {/*
@@ -231,7 +231,7 @@ const Hero = () => {
 
               <a
                 className="group relative inline-block text-sm font-medium text-gray-800 focus:outline-none focus:ring active:text-gray-500"
-                href="#"
+                href="#shop"
               >
                 <span className="absolute inset-0 border border-current"></span>
                 <span className=" gap-2 items-center border border-current bg-white px-7 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 flex">
