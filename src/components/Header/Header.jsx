@@ -129,8 +129,8 @@ const Header=() => {
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
+                src={Logo}
+                className=" absolute top-0 left-0 ml-4 h-20 w-auto"
               />
             </a>
             <button
@@ -142,7 +142,7 @@ const Header=() => {
               <XMarkIcon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
-          <div className="mt-6 flow-root">
+          <div className="mt-12 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">

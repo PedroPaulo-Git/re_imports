@@ -141,7 +141,7 @@ import MainBanner from "../../assets/MainBanner.jpg";
 function Shop() {
     return (
         <>
-      <div className="bg-white mx-auto px-20">
+      <div className="bg-white mx-auto px-2">
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <span className="flex items-center mt-2">
           <span className="h-px flex-1 bg-[#111111]"></span>
@@ -150,7 +150,7 @@ function Shop() {
           </span>
           <span className="h-px flex-1 bg-[#000000]"></span>
         </span>
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {produtosDestaque.map((product) => (
               <div key={product.id} className="group relative">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
@@ -181,7 +181,7 @@ function Shop() {
         <img
           alt=""
           src={BannerPod1}
-          className="h-32 w-full object-cover md:h-full"
+          className="h-60 w-full object-contain sm:object-cover  md:h-full"
         />
       
         <div className="p-4 text-center sm:p-6 md:col-span-2 lg:p-8 my-auto">
@@ -201,7 +201,7 @@ function Shop() {
           </a>
       
           <p className="mt-8 text-xs font-medium uppercase text-gray-400">
-            Oferta válida até 30 de outubro*
+            Oferta válida até 30 de novembro*
           </p>
         </div>
       </section>
@@ -214,7 +214,7 @@ function Shop() {
           <span className="h-px flex-1 bg-[#000000]"></span>
         </span>
   
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {produtos.map((product) => (
               <div key={product.id} className="group relative">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white shadow-xl g:aspect-none group-hover:opacity-75 lg:h-80">

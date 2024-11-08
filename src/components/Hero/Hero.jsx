@@ -1,6 +1,7 @@
 import React from "react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
-import BannerPod1 from "../../assets/banner.png";
+import BannerPodMain from "../../assets/banner.png";
+import BannerPod1 from "../../assets/banner1.png";
 import BannerPod2 from "../../assets/banner2.png";
 import BannerPod3 from "../../assets/banner3.png";
 import MainBanner from "../../assets/MainBanner.png";
@@ -87,7 +88,7 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="flex flex-1 justify-end">
+        {/* <div className="flex flex-1 justify-end">
           <button
             type="button"
             className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
@@ -95,14 +96,14 @@ const Hero = () => {
             <span className="sr-only">Dismiss</span>
             <XMarkIcon aria-hidden="true" className="h-5 w-5 text-gray-900" />
           </button>
-        </div>
+        </div> */}
       </div>
 
       <div>
-        <div className="sm:hidden">
-          <label htmlFor="Tab" className="sr-only">
+        {/* <div className="sm:hidden">
+          {/* <label htmlFor="Tab" className="sr-only">
             Tab
-          </label>
+          </label> 
 
           <select id="Tab" className="w-full rounded-md border-gray-200">
             <option>Settings</option>
@@ -110,7 +111,7 @@ const Hero = () => {
             <option>Archive</option>
             <option select>Notifications</option>
           </select>
-        </div>
+        </div> */}
 
         <div className="hidden sm:block">
           <div className="border-b border-gray-200">
@@ -157,7 +158,7 @@ const Hero = () => {
   This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
 */}
 
-      <section
+      {/* <section
         className="overflow-hidden bg-cover bg-top bg-no-repeat"
         style={{ backgroundImage: `url(${MainBanner})` }}
       >
@@ -183,23 +184,23 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div>
-        <span className="flex items-center mt-2">
+        <span className="flex items-center mt-12">
           <span className="h-px flex-1 bg-[#111111]"></span>
           <span className="shrink-0 px-6 text-center text-3xl sm:text-3xl bg-gradient-to-r from-gray-600 via-gray-700 to-gray-900 text-transparent bg-clip-text">
             Destaques
           </span>
           <span className="h-px flex-1 bg-[#000000]"></span>
         </span>
-        <div className="flex  mx-auto justify-center my-10">
-          <img className="w-2/6 object-contain" src={BannerPod1} alt="" />
-          <div className="my-auto">
-            <p className="text-6xl font-semibold text-zinc-800 max-w-sm">
+        <div className="flex flex-col mx-5 sm:flex-row lg:flex-row lg:mx-5 justify-center my-10 ">
+          <img className="w-[18rem] mx-auto sm:mx-5 sm:w-[24rem] lg:mx-5 lg:w-[28rem] object-contain" src={BannerPodMain} alt="" />
+          <div className="my-auto ">
+            <p className="text-5xl font-semibold text-zinc-800 max-w-sm">
               Encontre o sabor perfeito para você!
             </p>
-            <p className="text-2xl font-light text-zinc-800 max-w-sm">
+            <p className="text-xl font-light text-zinc-800 max-w-sm mb-8">
               Vapes modernos e pods de última geração com entrega rápida e
               segura.
             </p>
@@ -210,7 +211,7 @@ const Hero = () => {
                     <img
                       alt={product.imageAlt}
                       src={product.imageSrc}
-                      className="h-full w-full object-cover object-center lg:h-full lg:w-full "
+                      className="h-full w-[5rem] object-cover object-center lg:h-full lg:w-full "
                     />
                   </div>
                 </div>
