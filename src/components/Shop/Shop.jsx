@@ -20,6 +20,10 @@ import ELFWORLDEX from "../../assets/ELFWORLDEX.png";
 import BLVKEX from "../../assets/BLVKEX.png";
 import Blacksheep from "../../assets/Blacksheep.jpg";
 import MainBanner from "../../assets/MainBanner.jpg";
+import { useState } from "react";
+import ModalToBuy from "../ModalToBuy/ModalTobuy";
+
+
 const produtosDestaque = [
   {
     id: 1,
@@ -135,9 +139,17 @@ const produtos = [
 ];
   
 function Shop() {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const handleProductClick = (product) => {
+    setSelectedProduct(product);
+    setShowModal(true);
+  };
+  const [showModal,setShowModal] = useState(false)
     return (
         <>
+        {showModal && <ModalToBuy setShowModal={setShowModal} product={selectedProduct}/>}
       <div id="shop" className="bg-white mx-auto px-2">
+        
         <div className="mx-auto max-w-2xl px-4 py-16 lg:pt-8 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <span className="flex items-center mt-2">
           <span className="h-px flex-1 bg-[#111111]"></span>
@@ -146,9 +158,11 @@ function Shop() {
           </span>
           <span className="h-px flex-1 bg-[#000000]"></span>
         </span>
+
+        
           <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {produtosDestaque.map((product) => (
-              <div key={product.id} className="group relative">
+              <div onClick={()=>handleProductClick(product)} key={product.id} className="group relative">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                   <img
                     alt={product.imageAlt}
@@ -159,7 +173,8 @@ function Shop() {
                 <div className="mt-4 flex justify-between">
                   <div>
                     <h3 className="text-sm text-gray-700">
-                      <a href={product.href}>
+                      {/* <a href={product.href}> */}
+                      <a>
                         <span aria-hidden="true" className="absolute inset-0" />
                         {product.name}
                       </a>
@@ -191,7 +206,7 @@ function Shop() {
       
           <a
             className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white"
-            href="#"
+            href="https://api.whatsapp.com/send?phone=8199049803&text=Olá,%20gostaria%20de%20entrar%20em%20contato."
           >
             Aproveitar desconto
           </a>
@@ -212,7 +227,7 @@ function Shop() {
   
           <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {produtos.map((product) => (
-              <div key={product.id} className="group relative">
+              <div onClick={()=>handleProductClick(product)} key={product.id} className="group relative">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white shadow-xl group-hover:opacity-75 lg:h-80">
                   <img
                     alt={product.imageAlt}
@@ -223,7 +238,8 @@ function Shop() {
                 <div className="mt-4 flex justify-between">
                   <div>
                     <h3 className="text-sm text-gray-700">
-                      <a href={product.href}>
+                      {/* <a href={product.href}> */}
+                      <a>
                         <span aria-hidden="true" className="absolute inset-0" />
                         {product.name}
                       </a>
