@@ -24,11 +24,11 @@ const produtosDestaque = [
   {
     id: 1,
     name: "Ignite 150V",
-    href: "#",
+    href: "https://api.whatsapp.com/send?phone=8199049803&text=Olá,%20gostaria%20de%20entrar%20em%20contato.",
     imageSrc: ignite150v,
     imageAlt: "Pod Ignite 150V",
     price: "R$50",
-    puffs: "1500 Puffs",
+    puffs: "15000 Puffs",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const produtosDestaque = [
     imageSrc: lost,
     imageAlt: "Pod Lost",
     price: "R$50",
-    puffs: "2000 Puffs",
+    puffs: "6000 Puffs",
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const produtosDestaque = [
     imageSrc: oxbarold,
     imageAlt: "Pod Oxbar",
     price: "R$50",
-    puffs: "2500 Puffs",
+    puffs: "10000 Puffs",
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const produtosDestaque = [
     imageSrc: waka,
     imageAlt: "Pod Waka",
     price: "R$50",
-    puffs: "1800 Puffs",
+    puffs: "8000 Puffs",
   },
 ];
 
@@ -67,7 +67,7 @@ const produtos = [
     imageSrc: igniteEX,
     imageAlt: "Pod Ignite EX",
     price: "R$50",
-    puffs: "3000 Puffs",
+    puffs: "5000 Puffs",
   },
   {
     id: 2,
@@ -76,7 +76,7 @@ const produtos = [
     imageSrc: WAKA2EX,
     imageAlt: "Pod Waka 2",
     price: "R$50",
-    puffs: "2000 Puffs",
+    puffs: "5000 Puffs",
   },
   {
     id: 3,
@@ -85,7 +85,7 @@ const produtos = [
     imageSrc: ELF6EX,
     imageAlt: "Pod ELF 6 EX",
     price: "R$50",
-    puffs: "600 Puffs",
+    puffs: "6000 Puffs",
   },
   {
     id: 4,
@@ -94,7 +94,7 @@ const produtos = [
     imageSrc: Blacksheep,
     imageAlt: "Pod Black Sheep",
     price: "R$50",
-    puffs: "1200 Puffs",
+    puffs: "10000 Puffs",
   },
   {
     id: 5,
@@ -103,7 +103,7 @@ const produtos = [
     imageSrc: OXBAR8EX,
     imageAlt: "Pod OXBAR 8 EX",
     price: "R$50",
-    puffs: "800 Puffs",
+    puffs: "8000 Puffs",
   },
   {
     id: 6,
@@ -112,7 +112,7 @@ const produtos = [
     imageSrc: lostmaryEX,
     imageAlt: "Pod Lost Mary EX",
     price: "R$50",
-    puffs: "1500 Puffs",
+    puffs: "6500 Puffs",
   },
   {
     id: 7,
@@ -121,7 +121,7 @@ const produtos = [
     imageSrc: BLVKEX,
     imageAlt: "Pod BLVK EX",
     price: "R$50",
-    puffs: "2000 Puffs",
+    puffs: "10000 Puffs",
   },
   {
     id: 8,
@@ -130,7 +130,7 @@ const produtos = [
     imageSrc: ELFWORLDEX,
     imageAlt: "Pod ELF World EX",
     price: "R$50",
-    puffs: "2500 Puffs",
+    puffs: "10500 Puffs",
   },
 ];
   

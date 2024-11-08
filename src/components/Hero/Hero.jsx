@@ -187,7 +187,7 @@ const Hero = () => {
       </section> */}
 
       <div>
-        <span className="flex items-center mt-12">
+        <span className="flex items-center mt-12 px-4">
           <span className="h-px flex-1 bg-[#111111]"></span>
           <span className="shrink-0 px-6 text-center text-3xl sm:text-3xl bg-gradient-to-r from-gray-600 via-gray-700 to-gray-900 text-transparent bg-clip-text">
             Destaques
@@ -221,7 +221,7 @@ const Hero = () => {
             <div className="buttonsbanner mt-10 justify-around flex">
               <a
                 className="group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
-                href="#"
+                 href="https://api.whatsapp.com/send?phone=8199049803&text=Olá,%20gostaria%20de%20entrar%20em%20contato."
               >
                 <span className="absolute inset-0 border border-red-800 group-active:border-gray-500"></span>
                 <span className="block border bg-gradient-to-r from-red-500 via-red-600 to-red-700 px-12 py-3 transition-transform active:border-gray-500 active:bg-gray-500 group-hover:-translate-x-1 group-hover:-translate-y-1">
