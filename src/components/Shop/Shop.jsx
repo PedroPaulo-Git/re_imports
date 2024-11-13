@@ -162,7 +162,7 @@ function Shop() {
         
           <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {produtosDestaque.map((product) => (
-              <div onClick={()=>handleProductClick(product)} key={product.id} className="group relative">
+              <div onClick={()=>handleProductClick(product)} key={product.id} className="group relative cursor-pointer">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                   <img
                     alt={product.imageAlt}
@@ -188,7 +188,7 @@ function Shop() {
           </div>
         </div>
     {/* DISCOUNT  */}
-      <section className="overflow-hidden rounded-lg shadow-2xl md:grid md:grid-cols-3 ">
+      <section className=" lg:px-10 lg:mx-48 overflow-hidden rounded-lg shadow-2xl md:grid md:grid-cols-3 ">
         <img
           alt=""
           src={BannerPod1}
@@ -227,7 +227,7 @@ function Shop() {
   
           <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {produtos.map((product) => (
-              <div onClick={()=>handleProductClick(product)} key={product.id} className="group relative">
+              <div onClick={()=>handleProductClick(product)} key={product.id} className="group relative cursor-pointer">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white shadow-xl group-hover:opacity-75 lg:h-80">
                   <img
                     alt={product.imageAlt}
