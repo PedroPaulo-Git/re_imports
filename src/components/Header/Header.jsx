@@ -1,6 +1,6 @@
 import { useState } from 'react'
 // import Logo from '../../assets/LOGO.png'
-import Logo from '../../assets/LOGO3.png'
+import Logo from '../../assets/LOGO4.jpg'
 
 import {
   Dialog,
@@ -48,7 +48,7 @@ const Header=() => {
             <img
               alt=""
               src={Logo}
-              className="h-14 py-1 w-auto"
+              className="h-32 -my-4 py-1 w-auto"
             />
           </a>
         </div>
@@ -130,7 +130,7 @@ const Header=() => {
               <img
                 alt=""
                 src={Logo}
-                className=" absolute top-4 left-0 ml-4 h-12  w-auto"
+                className=" absolute top-4 left-0 ml-4 h-16  w-auto"
               />
             </a>
             <button
@@ -184,7 +184,7 @@ const Header=() => {
 
        <li>
          <a
-           href="https://www.instagram.com/re_importss/"
+           href="https://api.whatsapp.com/send?phone=8199049803&text=Olá,%20gostaria%20de%20entrar%20em%20contato."
            rel="noreferrer"
            target="_blank"
            className="text-gray-700 transition hover:opacity-75"
